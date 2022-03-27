@@ -1,7 +1,6 @@
 
 
 const cart = [];
-
 export const handleCart = (state = cart, action) => {
     const product = action.payload;
     switch (action.type) {
