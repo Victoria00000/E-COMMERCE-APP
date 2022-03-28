@@ -7,7 +7,6 @@ export const ProductsContainer = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState(data);
   const [loading, setLoading] = useState(false);
-  let componentMounted = true;
 
   useEffect(() => {
     const getProductsAxios = async () => {
@@ -15,13 +14,10 @@ export const ProductsContainer = () => {
       try {
         const responseProducts = await axios.get('https://fakestoreapi.com/products');
         console.log(responseProducts.data);
-        if (componentMounted) {
-          setData(await responseProducts.data);
-          setFilter(await responseProducts.data);
-          setLoading(false);
-        }
+        setData(await responseProducts.data);
+        setFilter(await responseProducts.data);
+        setLoading(false);
       } catch (error) { console.log(error); };
-      return () => componentMounted = false;
     };
     getProductsAxios();
   }, []);
