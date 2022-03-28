@@ -34,7 +34,7 @@ export const ProductCard = () => {
     return (
       <>
         <div className="col-md-4 pt-5 pb-5">
-          <img src={product.image} alt={product.title} height='500px' />
+          <img src={product.image} alt={product.title} height='500px' style={{maxWidth:'430px', paddingRight:'15px'}}/>
         </div>
         <div className="col-md-6 pt-5">
           <h4 className="text-uppercase text-black-50 mt-2">

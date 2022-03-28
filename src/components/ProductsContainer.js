@@ -27,7 +27,7 @@ export const ProductsContainer = () => {
       <div className="container my-5 py-5">
         <div className="row">
           <div className="col-12 mb-5">
-            <h1 className="display-6 fw-bolder"> Stock: </h1>
+            <h1 className="display-6 fw-bolder"> Buy now: </h1>
             <hr />
           </div>
           <div className="row justify-content-center">

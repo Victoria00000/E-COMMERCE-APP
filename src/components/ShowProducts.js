@@ -22,8 +22,8 @@ export const ShowProducts = ({ data }) => {
                 return (
                     <>
                         <div className="col-md-3 mb-4">
-                            <div className="card h-100 text-center p-2" key={product.id}>
-                                <img src={product.image} className="card-img-center justify-content-center" height='350px' alt={product.title} />
+                            <div className="card h-100 text-center p-2" key={product.id} style={{maxWidth:'300px', minWidth:'250px'}}>
+                                <img src={product.image} className="card-img-center" alt={product.title} style={{maxWidth:'300px', minWidth:'250px', maxHeight:'350px', minHeight:'290px'}}/>
                                 <div className="card-body">
                                     <h5 className="card-title mb-0"> {product.title.substring(0, 14)}... </h5>
                                     <p className="card-text lead"> ${product.price} </p>
