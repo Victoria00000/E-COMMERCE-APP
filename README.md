@@ -1,10 +1,11 @@
-About
-FRONTEND proyect with REACT.JS consuming a public API (fakestoreapi.com). And:
+(still under construction)
+#FRONTEND proyect with REACT.JS consuming a public API (fakestoreapi.com). And:
 
 "dependencies": {
     "axios": "^0.26.1",
     "bootstrap": "^5.1.3",
     "font-awesome": "^4.7.0",
+    "node-modules": "^1.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-loading-skeleton": "^3.0.3",
