@@ -38,8 +38,7 @@ export const Cart = () => {
     };
     return (
         <>
-            {state.length === 0 && emptyCart()}
-            {state.length !== 0 && state.map(cartItems)}
+             {state.length === 0 ? emptyCart() : state.map(cartItems)}
         </>
     );
 };
