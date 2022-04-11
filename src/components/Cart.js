@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { delCart } from '../redux/actions/indexAction';
+import { NavLink } from "react-router-dom";
 
 export const Cart = () => {
     const state = useSelector((state) => state.handleCart);
@@ -38,7 +39,10 @@ export const Cart = () => {
     };
     return (
         <>
-             {state.length === 0 ? emptyCart() : state.map(cartItems)}
+            {state.length === 0 ? emptyCart() : state.map(cartItems)}
+            <div className="d-flex justify-content-center">
+                <NavLink to='/checkout' className="btn btn-dark m-5" style={{ width: '200px' }}> Checkout </NavLink>
+            </div>
         </>
     );
 };

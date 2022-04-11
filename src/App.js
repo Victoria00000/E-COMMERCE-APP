@@ -9,6 +9,7 @@ import { Login } from './components/Login';
 import { Register } from './components/Register';
 import { Cart } from './components/Cart';
 import { Footer } from './components/Footer';
+import {Checkout} from './components/Checkout';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/checkout' element={<Checkout />} />
           </Routes>
         </main>
 
