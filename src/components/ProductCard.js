@@ -29,7 +29,8 @@ export const ProductCard = () => {
     getProductAxios();
   }, [id]);
 
-  const Loading = () => <div className="col-md-6"> LOADING...<Skeleton height={500} width={300}/></div>;
+  const Loading = () => <div className="col-md-6"> <div className="col-md-3 m-5 fs-5"> LOADING PLESE WAIT...</div> <Skeleton height={500} width={300}/></div>;
+  
   const ShowProduct = () => {
     return (
       <>

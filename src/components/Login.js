@@ -12,8 +12,6 @@ export const Login = () => {
           <input type="password" className="form-control" id="exampleInputPassword1" />
         </div>
         <button type="submit" className="btn btn-dark"> Login </button>
-        <div className="mb-5" style={{height:'330px'}}>
-        </div>
       </form>
     </div>
   );

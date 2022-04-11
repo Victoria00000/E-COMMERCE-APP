@@ -2,6 +2,7 @@ export const Footer = () => {
   const back = () => window.scrollTo({ top: 0, behavior: 'smooth' });
   return (
     <div className="container pt-5">
+      <div className="mb-5" style={{height:'330px'}}></div>
       <div className="card text-center">
         <div className="card-header">
         YOUR PURCHASE IS 100% SECURE
